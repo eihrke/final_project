@@ -9,7 +9,7 @@ document.querySelector("#menu").addEventListener("click", function() {
     } else {
         links.style.display = "grid"
         if (window.matchMedia("(min-width: 1000px)").matches) {
-            main.style.marginTop = "2.2em"
+            main.style.marginTop = "2.72em"
         }
         else {
             main.style.marginRight = "8em"
