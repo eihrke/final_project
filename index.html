@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Favorite Fictional Characters</title>
+</head>
+<body>
+    <header>
+        <h1>Favorite Fictional Characters</h1>
+        <div class="filters">
+            <button id="filter" aria-label="filter"><img src="images/filter.png" alt=""></button>
+            <form action="/filter.html" method="get">
+                <h2>Filters</h2>
+                <fieldset>
+                    <legend><h3>Alignment</h3></legend>
+                    <input type="radio" id="villains" name="alignment" value="villain">
+                    <label for="villains"> Villains</label><br>
+                    <input type="radio" id="heroes" name="alignment" value="hero">
+                    <label for="heroes"> Heroes</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Media Type</h3></legend>
+                    <input type="checkbox" id="movie" name="media" value="movie">
+                    <label for="movie"> Movies/TV</label><br>
+                    <input type="checkbox" id="book" name="media" value="book">
+                    <label for="book"> Books</label><br>
+                    <input type="checkbox" id="vidg" name="media" value="videogame">
+                    <label for="vidg"> Videogames</label><br>
+                </fieldset>
+                <input id="submit" type="submit" value="Filter Results">
+            </form>
+        </div>
+        <nav>
+            <button id="menu" aria-label="navigation links"><img src="images/menu.png" alt=""></button>
+            <ul>
+                <li><a href="index.html" class="current">&#10240 Home</a></li>
+                <li><a href="/filter.html?alignment=hero">&#10240 Heroes</a></li>
+                <li><a href="/filter.html?alignment=villain">&#10240 Villains</a></li>
+                <li><a href="/me.html">&#10240 About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="#main" id="skip" tabindex="1">Skip to Main</a>
+    <main id="main">
+        <div id="vader" class="card villain movie">
+            <h2>Darth Vader</h2>
+            <img src="images/vader1.jpg" class="im1" alt="darth vader">
+            <img src="images/vader2.gif" class="im2 gif" alt="darth vader">
+            <img src="images/vader2.jpg" class="im2 nongif" alt="darth vader">
+            <p>
+                <span>Origin: Star Wars</span><br><br>
+                <span>Creator: George Lucas</span><br><br>
+                <span>Rating: 10/10 Absolute classic</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet erat, 
+                eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor quis varius. 
+                Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, molestie sed lacus. 
+                Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat condimentum a. Sed pulvinar 
+                ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="geralt" class="card hero book videogame movie">
+            <h2>Geralt of Rivia</h2>
+            <img src="images/geralt1.jpg" class="im1" alt="geralt">
+            <img src="images/geralt2.gif" class="im2 gif" alt="geralt">
+            <img src="images/geralt2.jpg" class="im2 nongif" alt="geralt">
+            <p>
+                <span>Origin: The Witcher</span><br><br>
+                <span>Creator: Andrzej Sapkowski</span><br><br>
+                <span>Rating: 7/10 Very cool</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam 
+                eu, molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum 
+                erat condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod 
+                id non lacus.
+            </p>
+        </div>
+        <div id="talion" class="card hero videogame">
+            <h2>Talion</h2>
+            <img src="images/talion1.jpg" class="im1" alt="talion">
+            <img src="images/talion2.gif" class="im2 gif" alt="talion">
+            <img src="images/talion2.jpg" class="im2 nongif" alt="talion">
+            <p>
+                <span>Origin: Middle Earth: Shadow of Mordor</span><br><br>
+                <span>Creator: Monolith Productions, Behavior Interactive</span><br><br>
+                <span>Rating: 6/10 Plagued by death</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, 
+                molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat 
+                condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="tara" class="card villain book">
+            <h2>King Taravangian</h2>
+            <img src="images/tara1.jpg" class="im1 im2" alt="king taravangian">
+            <p>
+                <span>Origin: The Stormlight Archive</span><br><br>
+                <span>Creator: Brandon Sanderson</span><br><br>
+                <span>Rating: 8/10 Very intriguing</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor quis 
+                varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, molestie 
+                sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat condimentum 
+                a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="sauron" class="card villain book movie videogame">
+            <h2>Sauron</h2>
+            <img src="images/sauron1.jpg" class="im2" alt="sauron">
+            <img src="images/sauron2.gif" class="im1 gif" alt="sauron">
+            <img src="images/sauron2.jpg" class="im1 nongif" alt="sauron">
+            <p>
+                <span>Origin: The Lord of the Rings</span><br><br>
+                <span>Creator: J.R.R. Tolkien</span><br><br>
+                <span>Rating: 4/10 Terrible singer, weird obsession with rings</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet
+                 erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                 quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam 
+                 eu, molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum 
+                 erat condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+                </p>
+        </div>
+        <div id="kal" class="card hero book">
+            <h2>Kaladin Stormblessed</h2>
+            <img src="images/kaladin1.jpg" class="im2" alt="kaladin Stormblessed">
+            <img src="images/kaladin2.jpg" class="im1" alt="kaladin Stormblessed">
+            <p>
+                <span>Origin: The Stormlight Archive</span><br><br>
+                <span>Creator: Brandon Sanderson</span><br><br>
+                <span>Rating: 8/10 Will definitely protect you</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam 
+                eu, molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum 
+                erat condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="gandalf" class="card hero book movie videogame">
+            <h2>Gandalf</h2>
+            <img src="images/gandalf1.png" class="im2" alt="gandalf the white">
+            <img src="images/gandalf2.gif" class="im1 gif" alt="gandalf the gray">
+            <img src="images/gandalf2.jpg" class="im1 nongif" alt="gandalf the gray">
+            <p>
+                <span>Origin: The Lord of the Rings</span><br><br>
+                <span>Creator: J.R.R. Tolkien</span><br><br>
+                <span>Rating: 10/10 Groovy wizard, heart of an angel</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, 
+                molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat 
+                condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="galba" class="card villain book movie">
+            <h2>King Galbatorix</h2>
+            <img src="images/galbatorix.jpg" class="im1" alt="King Galbatorix">
+            <img src="images/galbatorix2.jpg" class="im2" alt="King Galbatorix">
+            <p>
+                <span>Origin: The Inheritance Cycle</span><br><br>
+                <span>Creator: Christopher Paolini</span><br><br>
+                <span>Rating: 3/10 Traitorous dragon thief</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, 
+                molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat condimentum a. 
+                Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="obiwan" class="card hero movie videogame">
+            <h2>Obi-wan Kenobi</h2>
+            <img src="images/obiwan1.jpg" class="im1" alt="Obi-wan Kenobi">
+            <img src="images/obiwan2.jpg" class="im2" alt="Obi-wan Kenobi">
+            <p>
+                <span>Origin: Star Wars</span><br><br>
+                <span>Creator: George Lucas</span><br><br>
+                <span>Rating: 10/10 Hello there!</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, 
+                molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat 
+                condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="dalinar" class="card hero book">
+            <h2>Dalinar Kholin</h2>
+            <img src="images/dalinar1.jpg" class="im1 im2" alt="Dalinar Kholin">
+            <p>
+                <span>Origin: The Stormlight Archive</span><br><br>
+                <span>Creator: Brandon Sanderson</span><br><br>
+                <span>Rating: 9/10 Accidentally slaughtered his first wife, then forgot about it... Very tragic</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet erat, 
+                eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor quis varius. 
+                Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, molestie sed lacus. 
+                Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat condimentum a. Sed pulvinar ac 
+                tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="lord" class="card villain book">
+            <h2>The Lord Ruler</h2>
+            <img src="images/lordruler.jpg" class="im1 im2" alt="The lord ruler">
+            <p>
+                <span>Origin: The Mistborn Saga</span><br><br>
+                <span>Creator: Brandon Sanderson</span><br><br>
+                <span>Rating: 5/10 Saved the world, but promotes slavery</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam 
+                eu, molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum 
+                erat condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="spider" class="card hero movie videogame book">
+            <h2>Spiderman</h2>
+            <img src="images/spider1.jpg" class="im1" alt="Spider man">
+            <img src="images/spider2.gif" class="im2 gif" alt="Spider man">
+            <img src="images/spider2.jpg" class="im2 nongif" alt="Spider man">
+            <p>
+                <span>Origin: Marvel Comics</span><br><br>
+                <span>Creator: Stan Lee, Steve Ditko</span><br><br>
+                <span>Rating: 9/10 Catchy theme song</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam 
+                eu, molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum 
+                erat condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="malekith" class="card villain videogame">
+            <h2>Malekith</h2>
+            <img src="images/malekith.jpg" class="im1" alt="Malekith">
+            <img src="images/malekith2.gif" class="im2 gif" alt="Malekith">
+            <img src="images/malekith2.jpg" class="im2 nongif" alt="Malekith">
+            <p>
+                <span>Origin: Warhammer</span><br><br>
+                <span>Creator: Creative Assembly, Feral Interactive</span><br><br>
+                <span>Rating: 6/10 Where does he urinate?</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor quis 
+                varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, 
+                molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat 
+                condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+        <div id="maul" class="card villain movie videogame">
+            <h2>Darth Maul</h2>
+            <img src="images/maul1.jpg" class="im2" alt="Darth Maul">
+            <img src="images/maul2.gif" class="im1 gif" alt="Darth Maul">
+            <img src="images/maul2.jpeg" class="im1 nongif" alt="Darth Maul">
+            <p>
+                <span>Origin: Star Wars</span><br><br>
+                <span>Creator: George Lucas</span><br><br>
+                <span>Rating: 10/10 Sick lightsaber</span><br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum rhoncus egestas. Nulla tellus magna, 
+                tempor sit amet augue id, finibus dictum metus. Morbi id neque enim. Nullam quis consectetur mi. Sed id aliquet 
+                erat, eget vulputate ipsum. Nulla pellentesque erat et justo vehicula efficitur. Suspendisse porta eget tortor 
+                quis varius. Mauris tempus mi eu enim consectetur, eget mollis ipsum mattis. Ut massa sem, commodo et aliquam eu, 
+                molestie sed lacus. Suspendisse pharetra laoreet purus id sodales. Curabitur porta dolor nibh, vel dictum erat 
+                condimentum a. Sed pulvinar ac tortor vel gravida. Vivamus eleifend tellus quis magna pellentesque euismod id non lacus.
+            </p>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

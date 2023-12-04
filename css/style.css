@@ -1,0 +1,291 @@
+#skip {
+    position:absolute;
+    left: 10000px;
+    background-color: black;
+}
+
+#skip:focus {
+    left: 0px;
+}
+
+body {
+    color:white;
+    overflow-x: hidden;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position:sticky;
+    top: 0px;
+    display: grid;
+    grid-template-columns: auto 2.5em 2.5em;
+    padding: 4px;
+    text-align: center;
+    background-color: #202020;
+    z-index: 1;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: left;
+    padding: 0px 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: medium;
+}
+
+button img {
+    object-fit: fill;
+    height: 2em;
+    border: solid 1px white;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+button:focus img, button:hover img {
+    border-width: 3px;
+}
+
+nav {
+    background-color: #202020;
+}
+
+nav ul {
+    display: none;
+    grid-template-columns: auto;
+    position: absolute;
+    right: 0px;
+    top: 3.2em;
+    background-color: #202020;
+    height: 100vh;
+    width: 8em;
+    padding: 10px;
+    border-top: solid 2px;
+    border-image-slice: 15;
+    border-image-source: radial-gradient(white, #202020);
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.current {
+    border: solid 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #56a5ec, #660000);
+    padding: 2px 14px 2px 0px;
+}
+
+form {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 3.8rem;
+    width: 10rem;
+    background-color: #202020;
+    padding: 10px;
+    border: solid 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #56a5ec, #660000);
+    text-align: left;
+}
+
+form h2 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+fieldset {
+    padding: 5px;
+    border: solid 2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #56a5ec, #660000);
+}
+
+fieldset input{
+    padding-left: 10px;
+}
+
+input {
+    display: inline-block;
+    appearance: auto;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #56a5ec, #660000);
+    padding: 0px 3px;
+    background-color: rgba(218, 219, 221, 0.25);
+    margin-top: 5px;
+}
+
+label {
+    cursor: pointer;
+}
+
+#main {
+    background-color: #3d3c3a;
+    padding: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto;
+    border: solid 5px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero {
+    color: black;
+    background-color: rgb(218, 219, 221);
+    border-color: #56a5ec;
+}
+
+.villain {
+    background-color: rgb(0, 0, 0);
+    border-color: #660000;
+}
+
+.im1, .im2 {
+    justify-self: center;
+    height: 50vh;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.im2 {
+    display: none;
+}
+
+.im1 {
+    display: block;
+}
+
+.nongif {
+    display: none;
+}
+
+#me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    height: 87.1vh;
+    gap: 20px;
+}
+
+#me p {
+    align-self: center;
+}
+
+#me img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border: solid 20px transparent;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #56a5ec, #660000) border-box;
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        grid-template-columns: 2.5em 2.5em auto;
+    }
+
+    h1 {
+        grid-column: 3 / -1;
+    }
+
+    nav {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .filters {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    form {
+        left: 10px;
+    }
+
+    nav ul {
+        grid-template-columns: auto auto auto auto;
+        width: 100vw;
+        height: initial;
+        left: 0px;
+    }
+
+    #main {
+        width: 80%;
+        margin: 0px 10%;
+        background-color: rgba(61, 60, 58, 0.9);
+    }
+
+    .card:hover, .card:focus {
+        grid-template-columns: auto auto;
+    }
+
+    .card:hover h2, .card:focus h2 {
+        grid-column: 1/-1;
+    }
+
+    .card img {
+        border-radius: 20px;
+    }
+
+    .card p {
+        display: none;
+        text-align: left;
+        align-self: center;
+    }
+
+    .card:hover p, .card:focus p{
+        display: block;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .card:hover .im1, .card:focus .im1, .card:hover .nongif, .card:focus .im2.nongif, .card:hover .im2.nongif, .card .im1.nongif {
+        display: none;
+    }
+
+    .card:hover .im2, .card:focus .im2 {
+        display: block;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+@media screen and (prefers-reduced-motion) {
+    .card .im1.nongif {
+        display: block;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+@media screen and (prefers-reduced-motion) and (min-width: 1000px) {
+    .card:focus .im2.nongif, .card:hover .im2.nongif {
+        display: block;
+    }
+
+    .card:hover .gif, .card:focus .gif, .card:focus .im1.nongif, .card:hover .im1.nongif {
+        display: none;
+    }
+}
